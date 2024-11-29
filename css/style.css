@@ -496,7 +496,7 @@ button {
 
 .services_text {
     width: 100%;
-    font-size: 24px;
+    font-size: 15px;
     color: #343534;
     font-weight: bold;
     padding: 20px 0px 0px 0px;
@@ -1064,4 +1064,33 @@ textarea#comment.massage-bt::placeholder {
 
 .margin_90{
     margin: 90px 0px;
+}
+
+
+.contact_info {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact_item {
+    margin-bottom: 15px;
+}
+
+.contact_item i {
+    margin-right: 10px;
+    color: #007bff; /* Blue color for icons */
+}
+
+.contact_item span {
+    font-weight: 500;
+}
+
+.contact_item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact_item a:hover {
+    text-decoration: underline;
 }

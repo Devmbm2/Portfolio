@@ -54,10 +54,10 @@
                         <a class="nav-link" href="about.html">About</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="skills.html">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                      </li>
                      <!-- <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
@@ -227,7 +227,7 @@
       </div>
       <!-- about section end -->
       <!-- services section start -->
-      <div class="services_section layout_padding">
+      <div class="services_section layout_padding" id="skills">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -375,13 +375,13 @@
                      </div>
                   </div>
                </div>
-               <div class="readmore_bt"><a href="#">Read More</a></div>
+               <!-- <div class="readmore_bt"><a href="#">Read More</a></div> -->
             </div>
          </div>
       </div>
       <!-- services section end -->
       <!-- portfolio section start -->
-      <div class="portfolio_section layout_padding">
+      <div class="portfolio_section layout_padding" id="portfolio">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -393,11 +393,13 @@
                   <div class="row">
                      <div class="col-md-8">
                         <div class="container_main">
-                           <img src="images/img-1.png" alt="" class="image">
+                           <img src="images/img-1.jpg" alt="" class="image">
                            <div class="overlay">
                               <div class="text">
                                  <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
+                                    <p style="font-size: larger;">Potato Leafs Disease Classification using CNN
+                                    </p>
+                                    <div class="buy_bt"><a target="_blank"  href="https://colab.research.google.com/#fileId=https%3A//storage.googleapis.com/kaggle-colab-exported-notebooks/potato-classification-complete-project-830c7d3c-bce0-4363-a15e-8892a147a390.ipynb%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Dgcp-kaggle-com%2540kaggle-161607.iam.gserviceaccount.com/20241129/auto/storage/goog4_request%26X-Goog-Date%3D20241129T134913Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D8d69254224895eeacdb0adad18fcac362ee4f9207528a6f3b6297fbac99e83d9d981a4b6cf0c7e1987de5a90002957730cc0d3964ae5cc46f33451388ddd64b5b0738718bc5e508521fa19896d6a3ee3b9fabddeb60d709dd7d1020f0b137382e40c9b9824977babaf4bdba2f549fb90576103f4341f0acafaaa7731db45f0e6c3c98b1c41e537bfb4afe36063eaf280ddcc038411cda99d461b8b196dfea50ca0be663b598fbd0336891876308d4fac3c0e906c6304326aa8085b7337932f2d7b039870e4522d96378f17ce560163a979cb40955f8c98626992a81ec9759fbd54e957d8a14a318e2bfd731b233d9b230777629ec2c16e479a5320394267514f">See More</a></div>
                                  </div>
                               </div>
                            </div>
@@ -463,7 +465,7 @@
       </div>
       <!-- portfolio section end -->
       <!-- blog section start -->
-      <div class="blog_section layout_padding">
+      <!-- <div class="blog_section layout_padding">
          <div class="container">
             <div class="row">
                <div class="col-sm-12">
@@ -508,41 +510,58 @@
                <div class="readmore_bt_1"><a href="#">Read More</a></div>
             </div>
          </div>
-      </div>
+      </div> -->
       <!-- blog section end -->
       <!-- contact section start -->
       <div class="contact_section layout_padding">
          <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <h1 class="contact_taital">My <span class="contact_taital_1">Contact</span></h1>
-               </div>
-            </div>
-            <div class="contact_section_2">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="mail_section_1">
-                        <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
-                        <input type="text" class="mail_text" placeholder="Your Email" name="Your Email">
-                        <input type="text" class="mail_text" placeholder="Your Phone" name="Your Phone">
-                        <textarea class="massage-bt" placeholder="Your Massage" rows="5" id="comment" name="Your Massage"></textarea>
-                        <div class="send_bt"><a href="#">Send Now</a></div>
+             <div class="row">
+                 <div class="col-sm-12">
+                     <h1 class="contact_taital">My <span class="contact_taital_1">Contact</span></h1>
+                 </div>
+             </div>
+             <div class="contact_section_2">
+                 <div class="row">
+                     <div class="col-md-12">
+                         <div class="contact_info">
+                             <!-- Email -->
+                             <div class="contact_item">
+                                 <!-- <i class="fas fa-envelope"></i> -->
+                                 <span>Email: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<a href="mailto:devmbm2@gmail.com">devmbm2@gmail.com</a></span>
+                             </div>
+                             
+                             <!-- Phone Number -->
+                             <div class="contact_item">
+                                 <!-- <i class="fas fa-phone-alt"></i> -->
+                                 <span>Phone:&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<a href="tel:+923034105303">+923034105303</a></span>
+                             </div>
+                             
+                             <!-- Address -->
+                             <div class="contact_item">
+                                 <!-- <i class="fas fa-map-marker-alt"></i> -->
+                                 <span>Address: &nbsp;&nbsp; Lahore, Punjab, Pakistan</span>
+                             </div>
+                         </div>
                      </div>
-                  </div>
-               </div>
-            </div>
+                 </div>
+             </div>
          </div>
-      </div>
+     </div>
+     
+     <!-- Font Awesome CDN for icons -->
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     
+     
       <!-- contact section end -->
       <!-- project box section start -->
-      <div class="project_box">
+      <!-- <div class="project_box">
          <div class="container">
             <div class="project_main">
                <h1 class="hire_text">Hire me for your projects</h1>
                <div class="callnow_bt"><a href="#">Call Now</a></div>
             </div>
          </div>
-      </div>
+      </div> -->
       <!-- project box section end -->
       <!-- footer section start -->
       <div class="footer_section">
@@ -550,14 +569,11 @@
             <div class="location_text">
                <ul>
                   <li>
-                     <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                  </li>
+                     <a href="tel:+923034105303"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                 </li>
+                 <li>
+                     <a href="mailto:devmbm2@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                 </li>
                </ul>
             </div>
          </div>
@@ -566,7 +582,7 @@
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
+            <p class="copyright_text">2022 All Rights Reserved. Design by Muhammad Bilal Manzoor</p>
          </div>
       </div>
       <!-- copyright section end -->
