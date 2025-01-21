@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    /* General body and layout styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden;
+    }
+
+    .portfolio_section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Horizontal scrolling container */
+    .portfolio_items {
+      display: flex;
+      gap: 20px;
+      padding: 0 100px;
+      transform: translateX(100%);
+    }
+
+    /* Portfolio item styling */
+    .portfolio_item {
+      min-width: 300px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    /* Image styling inside portfolio items */
+    .container_main img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Content inside portfolio items */
+    .content_main {
+      padding: 20px;
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    /* Read more button styling */
+    .readmore_bt a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .readmore_bt a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <!-- Include GSAP and ScrollTrigger library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="portfolio_section">
+    <div class="portfolio_items">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio_item">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="container_main">
+              <img src="images/5p1.png" alt="Email Generator using LLM" class="image">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="content_main">
+              <h3>Cold Email Generator with LLM</h3>
+              <p>An intelligent outreach tool that streamlines job-based outreach by analyzing company job postings, matching requirements with relevant services, and generating personalized cold emails.</p>
+              <div class="readmore_bt"><a target="_blank" href="col_email.html">Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio_item">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="container_main">
+              <img src="images/3p1.png" alt="Customer Segmentation & Analysis" class="image">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="content_main">
+              <h3>Customer Segmentation & Analysis</h3>
+              <p>This project segments customers based on their transaction behavior, categorizing them into groups like Young High Spenders and Senior Regulars.</p>
+              <div class="readmore_bt"><a target="_blank" href="cus_seg.html">Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 3 -->
+      <div class="portfolio_item">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="container_main">
+              <img src="images/4p1.jpg" alt="Flight Price Prediction" class="image">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="content_main">
+              <h3>Flight Price Prediction Model</h3>
+              <p>This project involves building a machine learning model to predict flight prices based on various features such as airline, flight details, departure and arrival times, duration, stops, and more.</p>
+              <div class="readmore_bt"><a target="_blank" href="fli_pri.html">Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 4 -->
+      <div class="portfolio_item">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="container_main">
+              <img src="images/img-1.jpg" alt="Potato Leafs Disease Classification" class="image">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="content_main">
+              <h3>Potato Leafs Disease Classification using CNN</h3>
+              <p>This project uses Convolutional Neural Networks to classify potato leaf diseases accurately. It demonstrates advanced AI techniques in agriculture.</p>
+              <div class="readmore_bt"><a target="_blank" href="patato_cnn.html">Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Item 5 -->
+      <div class="portfolio_item">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <div class="container_main">
+              <img src="images/2p1.jpg" alt="Documents Classification" class="image">
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="content_main">
+              <h3>Documents Classification</h3>
+              <p>The goal of this project is to classify a collection of documents into predefined categories based on their content.</p>
+              <div class="readmore_bt"><a href="cls_doc.html">Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // GSAP animation for horizontal scrolling
+    document.addEventListener("DOMContentLoaded", () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animate the portfolio items
+      gsap.to(".portfolio_items", {
+        xPercent: -100, // Move items left
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".portfolio_section",
+          start: "top top",
+          end: "+=3000", // Adjust for the scroll length
+          scrub: 1,
+          pin: true, // Pins the section while scrolling
+        },
+      });
+    });
+  </script>
+</body>
+</html>

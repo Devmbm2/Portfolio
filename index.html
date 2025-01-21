@@ -28,159 +28,72 @@
       <!-- fonts -->
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
       <!-- font awesome css -->
-      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+      <link rel="stylesheet" href="path/to/font-awesome.min.css"> -->
+
       <style>
          .app_icon{
             height: 60px;
             width: 60px;
          }
       </style>
-   </head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+      
+</head>
    <body>
+     
+
       <!-- header section start -->
       <div class="header_section">
          <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <div class="logo"><a href="index.html"><h1 style="color: white; font-size: 35px;">M Bilal Manzoor<h1></a></div>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                     </li>
-                     <!-- <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li> -->
-                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Me</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
+            <div id="neural-network" ></div>
+             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                 <div class="logo">
+                     <a href="index.html">
+                         <h1 style="color: white; font-size: 35px;">M Bilal Manzoor</h1>
+                     </a>
+                 </div>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav ml-auto">
+                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                     </ul>
+                 </div>
+             </nav>
          </div>
          <!-- banner section start -->
          <div class="banner_section layout_padding">
-            <section class="slide-wrapper">
-               <div class="container-fluid">
-                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                        <li data-target="#myCarousel" data-slide-to="3"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="container-fluid">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <div class="banner_taital_main">
-                                       <!-- <h3 class="banner_text">Hello Am <br>Muhammad Bilal Manzoor</h3> -->
-                                       <h1 class="banner_taital">AI & Data Science Expert</h1>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="social_icon">
-                                       <ul>
-                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container-fluid">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <div class="banner_taital_main">
-                                       <h3 class="banner_text">Hello Am <br>Muhammad Bilal Manzoor</h3>
-                                       <h1 class="banner_taital">AI & Data Science Expert</h1>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="social_icon">
-                                       <ul>
-                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container-fluid">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <div class="banner_taital_main">
-                                       <h3 class="banner_text">Hello Am <br>Muhammad Bilal Manzoor</h3>
-                                       <h1 class="banner_taital">AI & Data Science Expert</h1>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="social_icon">
-                                       <ul>
-                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container-fluid">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <div class="banner_taital_main">
-                                       <h3 class="banner_text">Hello Am <br>Muhammad Bilal Manzoor</h3>
-                                       <h1 class="banner_taital">AI & Data Science Expert</h1>
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="social_icon">
-                                       <ul>
-                                          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </section>
-            <!-- <div class="container">
-               <div class="video_bt">
-                  <div class="play_icon"><img src="images/play-icon.png"></div>
-               </div>
-            </div> -->
+             
+             <div class="container-fluid">
+                <div class="row">
+                   <div class="col-md-10">
+                      <div class="banner_taital_main">
+                         <h1 class="banner_taital">AI & Data Science Expert</h1>
+                      </div>
+                   </div>
+                   <div class="col-md-2">
+                      <div class="social_icon"">
+                         <ul>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/m-bilal-manzoor-8506b8286/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a target="_blank" href="https://github.com/Devmbm2"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                         </ul>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             </div>
          </div>
          <!-- banner section end -->
-      </div>
+        
+     </div>
+
     
       <!-- header section end -->
           <!-- about section start -->
@@ -241,7 +154,7 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-1.png"></div>
-                        <div class="app_icon_1">
+                        <div class="app_icon_1" style="display:none;">
                            <ul>
                               <li>Linear Algebra</li>
                               <li>Calculus</li>
@@ -255,7 +168,7 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-2.png"></div>
-                        <div class="app_icon_1">
+                        <div class="app_icon_1" style="display:none;">
                            <ul>
                               <li>Data Structures</li>
                               <li>Control Flow</li>
@@ -273,7 +186,7 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-3.png"></div>
-                        <div class="app_icon_1">
+                        <div class="app_icon_1" style="display:none;">
                            <ul>
                               <li>Basic Queries</li>
                               <li>Joins</li>
@@ -291,7 +204,7 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-4.png"></div>
-                        <div class="app_icon_1">
+                        <div class="app_icon_1" style="display:none;">
                            <ul>
                               <li>Handling Missing Data</li>
                               <li>Removing Duplicates</li>
@@ -315,7 +228,7 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-5.png"></div>
-                        <div class="app_icon_1">
+                        <div class="app_icon_1" style="display:none;">
                            <ul>
                               <li>Performance Visualizations</li>
                               <li>Loss & Accuracy Curves</li>
@@ -330,7 +243,7 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-6.png"></div>
-                        <div class="app_icon_1">
+                        <div class="app_icon_1" style="display:none;">
                            <ul>
                               <li>Supervised  Learning</li>
                               <li>Unsupervised Learning</li>
@@ -346,7 +259,7 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-7.png"></div>
-                        <div class="app_icon_1">
+                        <div class="app_icon_1" style="display:none;">
                            <ul>
                               <li>Neural Networks <br>
                                  (ANN, CNN, RNN, LSTM)</li>
@@ -361,7 +274,7 @@
                   <div class="col-lg-3 col-sm-6">
                      <div class="box_main ">
                         <div class="app_icon"><img src="images/icon-8.png"></div>
-                        <div class="app_icon_1">
+                        <div class="app_icon_1" style="display:none;" >
                            <ul>
                               <li>Text Preprocessing </li>
                               <li>Text Classification</li>
@@ -375,10 +288,11 @@
                      </div>
                   </div>
                </div>
-               <!-- <div class="readmore_bt"><a href="#">Read More</a></div> -->
+               <div class="readmore_bt"><a  id="expandSkillsBtn"  href="ss">Expand Skills</a></div>
             </div>
          </div>
       </div>
+
       <!-- services section end -->
       <!-- portfolio section start -->
       <div class="portfolio_section layout_padding" id="portfolio">
@@ -388,233 +302,124 @@
                   <h1 class="portfolio_taital">My <span class="portfolio_taital_1">Portfolio</span></h1>
                </div>
             </div>
-            <!-- <div class="portfolio_section">
-               <div class="portfolio_section_2">
-                  <div class="row">
-                     <div class="col-md-8">
-                        <div class="container_main">
-                           <img src="images/img-1.jpg" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <p style="font-size: larger;">Potato Leafs Disease Classification using CNN
-                                    </p>
-                                    <div class="buy_bt"><a target="_blank"  href="https://colab.research.google.com/#fileId=https%3A//storage.googleapis.com/kaggle-colab-exported-notebooks/potato-classification-complete-project-830c7d3c-bce0-4363-a15e-8892a147a390.ipynb%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Dgcp-kaggle-com%2540kaggle-161607.iam.gserviceaccount.com/20241129/auto/storage/goog4_request%26X-Goog-Date%3D20241129T134913Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D8d69254224895eeacdb0adad18fcac362ee4f9207528a6f3b6297fbac99e83d9d981a4b6cf0c7e1987de5a90002957730cc0d3964ae5cc46f33451388ddd64b5b0738718bc5e508521fa19896d6a3ee3b9fabddeb60d709dd7d1020f0b137382e40c9b9824977babaf4bdba2f549fb90576103f4341f0acafaaa7731db45f0e6c3c98b1c41e537bfb4afe36063eaf280ddcc038411cda99d461b8b196dfea50ca0be663b598fbd0336891876308d4fac3c0e906c6304326aa8085b7337932f2d7b039870e4522d96378f17ce560163a979cb40955f8c98626992a81ec9759fbd54e957d8a14a318e2bfd731b233d9b230777629ec2c16e479a5320394267514f">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-2.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+        
+            <div class="row">
+               <div class="col-md-4">
+               <div class="card mb-4" style="height: 100%;">
+                    <video class="card-img-top" autoplay muted loop>
+                      <source src="images/cvp1.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="card-body">
+                    <h5 class="card-title">Filled Ready Bottles Counter</h5>
+                    <p class="card-text">Counts filled bottles on a production line using a YOLO model for real-time object detection.</p>
+                    <a href="bottle_counter.html" target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+               </div>
+               </div>
+               <div class="col-md-4">
+               <div class="card mb-4" style="height: 100%;">
+                  <video class="card-img-top" autoplay muted loop>
+                     <source src="images/cvp2.mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+                   </video>
+                    <div class="card-body">
+                    <h5 class="card-title">Human Exercise and Training Posture Finder</h5>
+                    <p class="card-text">Finds and checks human exercise and training postures using a YOLO model.</p>
+                    <a href="exercise_posture.html" target="_blank" class="btn btn-primary">Read More</a>
+                    </div>
+               </div>
+               </div>
+               <div class="col-md-4">
+               <div class="card mb-4" style="height: 100%;">
+                  <video class="card-img-top" autoplay muted loop>
+                     <source src="images/traffic.mp4" type="video/mp4">
+                     Your browser does not support the video tag.
+                   </video>
+                  <div class="card-body">
+                     <h5 class="card-title">Traffic Detail Analysis</h5>
+                     <p class="card-text">Traffic Detail Analysis Computer vision project.</p>
+                  <a href="fli_pri.html" target="_blank" class="btn btn-primary">Read More</a>
                   </div>
                </div>
-               <div class="portfolio_section_2">
-                  <div class="row">
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-3.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-4.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-5.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
                </div>
-            </div> -->
+            </div>      
 
 
 
 
-
-            <div class="portfolio_section">
-
-               <div class="portfolio_item">
-                  <div class="row align-items-center">
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/5p1.png" alt="Email Generator using LLM" class="image">
-                        </div>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="content_main">
-                           <h3>Cold Email Generator with LLM  </h3>
-                           <p>An intelligent outreach tool that streamlines job-based outreach by analyzing company job postings, matching requirements with relevant services, and generating personalized cold emails.</p>
-                           <div class="readmore_bt"><a target="_blank" href="col_email.html">Read More</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="portfolio_item">
-                  <div class="row align-items-center">
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/3p1.png" alt="Potato Leafs Disease Classification" class="image">
-                        </div>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="content_main">
-                           <h3>Customer Segmentation & Analysis </h3>
-                           <p>This project segments customers based on their transaction behavior, categorizing them into groups like Young High Spenders and Senior Regulars.</p>
-                           <div class="readmore_bt"><a target="_blank" href="cus_seg.html">Read More</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="portfolio_item">
-                  <div class="row align-items-center">
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/4p1.jpg" alt="Potato Leafs Disease Classification" class="image">
-                        </div>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="content_main">
-                           <h3>Flight Price Prediction Model</h3>
-                           <p>This project involves building a machine learning model to predict flight prices based on various features such as airline, flight details, departure and arrival times, duration, stops, and more.</p>
-
-                           <div class="readmore_bt"><a target="_blank" href="fli_pri.html">Read More</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-
-
-               <div class="portfolio_item">
-                  <div class="row align-items-center">
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-1.jpg" alt="Potato Leafs Disease Classification" class="image">
-                        </div>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="content_main">
-                           <h3>Potato Leafs Disease Classification using CNN</h3>
-                           <p>This project uses Convolutional Neural Networks to classify potato leaf diseases accurately. It demonstrates advanced AI techniques in agriculture.</p>
-                           <div class="readmore_bt"><a target="_blank" href="patato_cnn.html">Read More</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            
-               <div class="portfolio_item">
-                  <div class="row align-items-center">
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/2p1.jpg" alt="Project 2" class="image">
-                        </div>
-                     </div>
-                     <div class="col-md-8">
-                        <div class="content_main">
-                           <h3>Documents classification</h3>
-                           <p>The goal of this project is to classify a collection of documents into predefined categories based on their content.</p>
-                           <div class="readmore_bt"><a href="cls_doc.html">Read More</a></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            
-               <!-- Add more items as needed -->
+      <div class="row">
+         <div class="col-md-4">
+         <div class="card mb-4" style="height: 100%;">
+            <img src="images/5p1.png" class="card-img-top" alt="Email Generator using LLM">
+            <div class="card-body">
+            <h5 class="card-title">Cold Email Generator with LLM</h5>
+            <p class="card-text">Streamlines job-based outreach by generating personalized cold emails.</p>
+            <a href="col_email.html" target="_blank" class="btn btn-primary">Read More</a>
             </div>
-            
+         </div>
+         </div>
+         <div class="col-md-4">
+         <div class="card mb-4" style="height: 100%;">
+            <img src="images/3p1.png" class="card-img-top" alt="Customer Segmentation & Analysis">
+            <div class="card-body">
+            <h5 class="card-title">Customer Segmentation & Analysis</h5>
+            <p class="card-text">Segments customers based on their transaction behavior.</p>
+            <a href="cus_seg.html" target="_blank" class="btn btn-primary">Read More</a>
+            </div>
+         </div>
+         </div>
+         <div class="col-md-4">
+         <div class="card mb-4" style="height: 100%;">
+            <img src="images/4p1.jpg" class="card-img-top" alt="Flight Price Prediction Model">
+            <div class="card-body">
+            <h5 class="card-title">Flight Price Prediction Model</h5>
+            <p class="card-text">Predicts flight prices based on various features.</p>
+            <a href="fli_pri.html" target="_blank" class="btn btn-primary">Read More</a>
+            </div>
+         </div>
+         </div>
+      </div>
+      <br>
+      <div class="row">
+         <div class="col-md-4">
+         <div class="card mb-4" style="height: 100%;">
+            <img src="images/img-1.jpg" class="card-img-top" alt="Potato Leafs Disease Classification">
+            <div class="card-body">
+            <h5 class="card-title">Potato Leafs Disease Classification</h5>
+            <p class="card-text">Classifies potato leaf diseases using CNN.</p>
+            <a href="patato_cnn.html" target="_blank" class="btn btn-primary">Read More</a>
+            </div>
+         </div>
+         </div>
+         <div class="col-md-4">
+         <div class="card mb-4" style="height: 100%;">
+            <img src="images/2p1.jpg" class="card-img-top" alt="Documents Classification">
+            <div class="card-body">
+            <h5 class="card-title">Documents Classification</h5>
+            <p class="card-text">Classifies documents into predefined categories.</p>
+            <a href="cls_doc.html" class="btn btn-primary">Read More</a>
+            </div>
+         </div>
+         </div>
+         <div class="col-md-4">
+            <div class="card mb-4" style="height: 100%;">
+               <img src="images/6p3.png" class="card-img-top" alt="Fish Classification">
+               <div class="card-body">
+               <h5 class="card-title">Fish Classification</h5>
+               <p class="card-text">Fish Classification complete project with DVC pipline</p>
+               <a href="cls_fish.html" class="btn btn-primary">Read More</a>
+               </div>
+            </div>
+            </div>
+      </div>
 
 
 
-
-
+            <br><br>
             <div class="seemore_bt"><a href="#">See More</a></div>
          </div>
       </div>
-      <!-- portfolio section end -->
-      <!-- blog section start -->
-      <!-- <div class="blog_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <h1 class="blog_taital">My <span class="blog_taital_1">Blog</span></h1>
-                  <p class="blog_text">upidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-               </div>
-            </div>
-         </div>
-         <div class="blog_section_2">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-4">
-                     <div class="blog_box">
-                        <div class="blog_img">
-                           <h4 class="date_text">Jun 05</h4>
-                           <h4 class="prep_text">Veniam, quis nostrud </h4>
-                        </div>
-                        <p class="lorem_text">elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="blog_box">
-                        <div class="blog_img_2">
-                           <h4 class="date_text">Jun 05</h4>
-                           <h4 class="prep_text">Veniam, quis nostrud </h4>
-                        </div>
-                        <p class="lorem_text">elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="blog_box">
-                        <div class="blog_box_3">
-                           <div class="blog_img">
-                              <h4 class="date_text">Jun 05</h4>
-                              <h4 class="prep_text">Veniam, quis nostrud </h4>
-                           </div>
-                           <p class="lorem_text">elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="readmore_bt_1"><a href="#">Read More</a></div>
-            </div>
-         </div>
-      </div> -->
-      <!-- blog section end -->
-      <!-- contact section start -->
       <div class="contact_section layout_padding" id="contact">
          <div class="container">
              <div class="row">
@@ -653,19 +458,7 @@
      <!-- Font Awesome CDN for icons -->
      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
      
-     
-      <!-- contact section end -->
-      <!-- project box section start -->
-      <!-- <div class="project_box">
-         <div class="container">
-            <div class="project_main">
-               <h1 class="hire_text">Hire me for your projects</h1>
-               <div class="callnow_bt"><a href="#">Call Now</a></div>
-            </div>
-         </div>
-      </div> -->
-      <!-- project box section end -->
-      <!-- footer section start -->
+  
       <div class="footer_section">
          <div class="container">
             <div class="location_text">
@@ -697,6 +490,8 @@
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
+      <!-- GSAP -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
       <script>
          $('#myCarousel').carousel({
             interval: false
@@ -722,5 +517,60 @@
             });
          });
       </script>
+
+         <script>
+            document.getElementById('expandSkillsBtn').addEventListener('click', function(event) {
+               event.preventDefault();
+               var skillSkills = document.querySelectorAll('.app_icon_1');
+               var skill_icons = document.querySelectorAll('.app_icon');
+               var expandBtn = document.getElementById('expandSkillsBtn');
+               var isExpanded = false;
+
+               skillSkills.forEach(function(detail, index) {
+               if (detail.style.display === 'none') {
+                  detail.style.display = 'block';
+                  skill_icons[index].style.display = 'none';
+                  isExpanded = true;
+               } else {
+                  detail.style.display = 'none';
+                  skill_icons[index].style.display = 'block';
+               }
+               });
+
+               if (isExpanded) {
+               expandBtn.textContent = 'Collapse Skills';
+               } else {
+               expandBtn.textContent = 'Expand Skills';
+               }
+            });
+
+         
+         
+         
+            gsap.registerPlugin(ScrollTrigger);
+
+              // Animate only buttons with the class .readmore_btn
+    gsap.utils.toArray('.readmore_bt , .col-md-4 , .about_text , .about_box   , .contact_item   , .seemore_bt , .box_main , .portfolio_item').forEach((button) => {
+      gsap.fromTo(
+        button,
+        { opacity: 0, scale: 0.5 }, // Start hidden and shrunken
+        {
+          opacity: 1,
+          scale: 1, // End at normal size
+          duration: 0.5,
+          ease: 'elastic.out(0.5, 0.2)', // Elastic bounce effect
+          scrollTrigger: {
+            trigger: button, // Trigger animation when the button enters view
+            start: 'top 80%',
+            end: 'top 50%',
+            toggleActions: 'play none none reverse',
+          },
+        }
+      );
+    });
+
+
+
+         </script>
    </body>
 </html>

@@ -372,7 +372,7 @@ $(function () {
 
 
   // Optionally, you can add some JavaScript to apply the zoom effect
-  const images = document.querySelectorAll('img');
+  const images = document.querySelectorAll('img , video');
   images.forEach(image => {
 	  image.addEventListener('mouseover', () => {
 		  image.style.transform = 'scale(1.5)';
@@ -381,3 +381,94 @@ $(function () {
 		  image.style.transform = 'scale(1)';
 	  });
   });
+
+
+  const createNeuralNetwork = () => {
+    const network = document.getElementById('neural-network');
+
+    // Create nodes
+    const nodes = [];
+    for (let i = 0; i < 30; i++) {
+        const node = document.createElement('div');
+        node.classList.add('node');
+        network.appendChild(node);
+
+        const size = Math.random() * 10 + 5;
+        gsap.set(node, {
+            width: size,
+            height: size,
+            background: '#00FFAE',
+            borderRadius: '50%',
+            position: 'absolute',
+            top: Math.random() * window.innerHeight,
+            left: Math.random() * window.innerWidth,
+        });
+
+        nodes.push(node);
+    }
+
+    // Animate nodes with connections
+    nodes.forEach((node, i) => {
+        // Move each node in a random path
+        gsap.to(node, {
+            x: '+=30',
+            y: '+=30',
+            yoyo: true,
+            repeat: -1,
+            duration: Math.random() * 5 + 3,
+            ease: 'power1.inOut',
+        });
+
+        // Connect nodes with lines
+        const nextNode = nodes[(i + 1) % nodes.length];
+        const line = document.createElement('div');
+        line.classList.add('line');
+        network.appendChild(line);
+
+        const animateLine = () => {
+            const rect1 = node.getBoundingClientRect();
+            const rect2 = nextNode.getBoundingClientRect();
+            const x1 = rect1.left + rect1.width / 2;
+            const y1 = rect1.top + rect1.height / 2;
+            const x2 = rect2.left + rect2.width / 2;
+            const y2 = rect2.top + rect2.height / 2;
+
+            gsap.set(line, {
+                width: Math.hypot(x2 - x1, y2 - y1),
+                height: 2,
+                background: 'rgba(0, 255, 174, 0.5)',
+                position: 'absolute',
+                transformOrigin: '0% 50%',
+                left: x1,
+                top: y1,
+                rotation: Math.atan2(y2 - y1, x2 - x1) * (180 / Math.PI),
+            });
+        };
+
+        gsap.ticker.add(animateLine);
+    });
+};
+
+createNeuralNetwork();
+
+// GSAP animation for the banner title with typing effect
+const bannerTitle = document.querySelector('.banner_taital');
+const text = bannerTitle.textContent;
+bannerTitle.textContent = '';
+
+gsap.from('.banner_taital', {
+	opacity: 0,
+	y: -50,  // Slide up from 50px above
+	duration: 0.3,
+	ease: 'power3.out',
+	onComplete: () => {
+		let index = 0;
+		const typingEffect = setInterval(() => {
+			bannerTitle.textContent += text[index];
+			index++;
+			if (index === text.length) {
+				clearInterval(typingEffect);
+			}
+		}, 100); // Adjust typing speed here
+	}
+});
