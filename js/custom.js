@@ -472,3 +472,7 @@ gsap.from('.banner_taital', {
 		}, 100); // Adjust typing speed here
 	}
 });
+
+
+
+
