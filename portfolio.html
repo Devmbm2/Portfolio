@@ -306,9 +306,22 @@
                  card.style.display = (category === 'all' || card.classList.contains(category)) ? 'block' : 'none';
              });
  
-             const buttons = document.querySelectorAll('.nav-link');
-             buttons.forEach(button => button.classList.remove('active'));
-             event.target.classList.add('active');
+              const buttons = document.querySelectorAll('.nav-link');
+            //  buttons.forEach(button => button.classList.remove('active'));
+            //  event.target.classList.add('active');
+
+            buttons.forEach(button => {
+               // Extract value from onclick attribute
+               const onclickAttr = button.getAttribute('onclick'); // e.g., "showProjects('computer-vision')"
+               const match = onclickAttr?.match(/showProjects\('(.+)'\)/); // Regex to get the value inside quotes
+
+               // Check if it matches the target value
+               if (match && match[1] === category) {
+                  button.classList.add('active');
+               } else {
+                  button.classList.remove('active');
+               }
+            });
          }
 
          document.addEventListener("DOMContentLoaded", function () {
