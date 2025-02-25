@@ -16,7 +16,7 @@
       <!-- bootstrap css -->
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/stylec.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -29,149 +29,313 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
       <!-- font awesome css -->
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+     
+  
    </head>
    <body>
       <!-- header section start -->
       <div class="header_section header_bg">
          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="service.html">Service</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                     </li>
-                  </ul>
-               </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <h1 style="color: white; font-size: 35px;">Portfolio</h1>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#skills">Skills</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-         </div>
+        </div>
+        
       </div>
+      <br><br><br><br>
       <!-- header section end -->
-      <!-- portfolio section start -->
-      <div class="portfolio_section layout_padding">
+      <!-- services section start -->
+      <section class="portfolio py-5">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
          <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <h1 class="portfolio_taital">My <span class="portfolio_taital_1">Portfolio</span></h1>
-               </div>
-            </div>
-            <div class="portfolio_section">
-               <div class="portfolio_section_2">
-                  <div class="row">
-                     <div class="col-md-8">
-                        <div class="container_main">
-                           <img src="images/img-1.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-2.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+             <h1 class="text-center mb-4">Portfolio</h1>
+             <ul class="nav nav-tabs justify-content-center mb-4" id="portfolioTabs">
+                 <li class="nav-item"><button class="nav-link active" onclick="showProjects('all')">All</button></li>
+                 <li class="nav-item"><button class="nav-link" onclick="showProjects('computer-vision')">Computer Vision</button></li>
+                 <li class="nav-item"><button class="nav-link" onclick="showProjects('image-classification')">Image Classification</button></li>
+                 <li class="nav-item"><button class="nav-link" onclick="showProjects('ai-agents')">AI Agents</button></li>
+                 <li class="nav-item"><button class="nav-link" onclick="showProjects('generative-ai')">Generative AI</button></li>
+                 <li class="nav-item"><button class="nav-link" onclick="showProjects('machine-learning')">Machine Learning</button></li>
+                 <li class="nav-item"><button class="nav-link" onclick="showProjects('deep-learning')">Deep Learning</button></li>
+             </ul>
+ 
+             <div class="row g-4" id="projectContainer">
+
+
+
+
+
+
+
+               <div class="col-md-4 project-card all computer-vision">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="images/cvp1.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">Filled Ready Bottles Counter</h5>
+                        <p class="card-text">Counts filled bottles using YOLO model.</p>
+                        <a href="bottle_counter.html" target="_blank" class="btn btn-primary">Read More</a>
                      </div>
                   </div>
                </div>
-               <div class="portfolio_section_2">
-                  <div class="row">
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-3.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-4.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="container_main">
-                           <img src="images/img-5.png" alt="" class="image">
-                           <div class="overlay">
-                              <div class="text">
-                                 <div class="btn_main">
-                                    <div class="buy_bt"><a href="#">See More</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+               
+               <div class="col-md-4 project-card all computer-vision">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="images/tranner.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">Human Exercise and Training Posture Finder</h5>
+                        <p class="card-text">Checks exercise postures using YOLO.</p>
+                        <a href="exercise_posture.html" target="_blank" class="btn btn-primary">Read More</a>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="seemore_bt"><a href="#">See More</a></div>
+               
+               <div class="col-md-4 project-card all computer-vision">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="images/virtual_keyboard_demo.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">Virtual Keyboard</h5>
+                        <p class="card-text">Built a Virtual Keyboard with Hand Gestures.</p>
+                        <a href="virtual_k.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-md-4 project-card all computer-vision">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="images/traffic.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">Traffic Detail Analysis</h5>
+                        <p class="card-text">Traffic Detail Analysis Computer vision project.</p>
+                        <a href="traffic_a.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-md-4 project-card all computer-vision">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="images/puzzle_g.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">Puzzle Game</h5>
+                        <p class="card-text">Puzzle Game with Hand Gesture Control.</p>
+                        <a href="puzzle_g.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-md-4 project-card all computer-vision">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="images/face_r.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">Face Recognition Attendance System</h5>
+                        <p class="card-text">Employee Attendance Management System with Face Recognition.</p>
+                        <a href="face_r.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+
+
+               
+               <!-- Image Classification Projects -->
+               <div class="col-md-4 project-card all computer-vision image-classification">
+                  <div class="card h-100">
+                     <img src="images/img-1.jpg" class="card-img-top" alt="Potato Leafs Disease Classification">
+                     <div class="card-body">
+                        <h5 class="card-title">Potato Leafs Disease Classification</h5>
+                        <p class="card-text">Classifies potato leaf diseases using CNN.</p>
+                        <a href="patato_cnn.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-4 project-card all computer-vision image-classification">
+                  <div class="card h-100">
+                     <img src="images/6p3.png" class="card-img-top" alt="Fish Classification">
+                     <div class="card-body">
+                        <h5 class="card-title">Fish Classification</h5>
+                        <p class="card-text">Fish Classification complete project with DVC pipeline.</p>
+                        <a href="cls_fish.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+
+               
+   
+
+
+
+
+
+
+
+
+
+                 <div class="col-md-4 project-card all ai-agents">
+                     <div class="card h-100">
+                         <img src="images/5p1.png" class="card-img-top" alt="Customer Service AI Agent">
+                         <div class="card-body">
+                             <h5 class="card-title">Cold Email Generator with LLM</h5>
+                             <p class="card-text">An AI chatbot Generates personalized cold emails for job apply.</p>
+                             <a href="col_email.html" target="_blank" class="btn btn-primary">Read More</a>
+                         </div>
+                     </div>
+                 </div>
+ 
+
+
+
+                 
+
+                 <div class="col-md-4 project-card all generative-ai">
+                  <div class="card h-100">
+                      <img src="images/5p1.png" class="card-img-top" alt="Customer Service AI Agent">
+                      <div class="card-body">
+                          <h5 class="card-title">Cold Email Generator with LLM</h5>
+                          <p class="card-text">An AI chatbot Generates personalized cold emails for job apply.</p>
+                          <a href="col_email.html" target="_blank" class="btn btn-primary">Read More</a>
+                      </div>
+                  </div>
+              </div>
+
+
+                 
+
+
+
+
+
+
+               <div class="col-md-4 project-card all machine-learning">
+                  <div class="card h-100">
+                     <img src="images/2p1.jpg" class="card-img-top" alt="Documents Classification">
+                     <div class="card-body">
+                        <h5 class="card-title">Documents Classification</h5>
+                        <p class="card-text">Classifies documents into predefined categories.</p>
+                        <a href="cls_doc.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+
+
+
+               <!--deep learnings -->
+               <div class="col-md-4 project-card deep-learning">
+                  <div class="card h-100">
+                     <img src="images/img-1.jpg" class="card-img-top" alt="Potato Leafs Disease Classification">
+                     <div class="card-body">
+                        <h5 class="card-title">Potato Leafs Disease Classification</h5>
+                        <p class="card-text">Classifies potato leaf diseases using CNN.</p>
+                        <a href="patato_cnn.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-4 project-card deep-learning">
+                  <div class="card h-100">
+                     <img src="images/6p3.png" class="card-img-top" alt="Fish Classification">
+                     <div class="card-body">
+                        <h5 class="card-title">Fish Classification</h5>
+                        <p class="card-text">Fish Classification complete project with DVC pipeline.</p>
+                        <a href="cls_fish.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+
+
+
+
+
+             </div>
          </div>
-      </div>
-      <!-- portfolio section end -->
+
+     </section>
+
+
+
+     <style>
+      .bg-light {
+         --bs-bg-opacity: 1;
+         background-color: #000 !important;
+      }
+     </style>
+     
+     <script>
+         function showProjects(category) {
+             const cards = document.querySelectorAll('.project-card');
+             cards.forEach(card => {
+                 card.style.display = (category === 'all' || card.classList.contains(category)) ? 'block' : 'none';
+             });
+ 
+             const buttons = document.querySelectorAll('.nav-link');
+             buttons.forEach(button => button.classList.remove('active'));
+             event.target.classList.add('active');
+         }
+
+         document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const category = urlParams.get('category');
+    if (category) {
+        showProjects(category);
+    } else {
+        showProjects('all');
+    }
+});
+     </script>
+ 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- services section end -->
       <!-- footer section start -->
       <div class="footer_section">
          <div class="container">
-            <div class="location_text">
-               <ul>
-                  <li>
-                     <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                  </li>
-               </ul>
-            </div>
+          
          </div>
       </div>
       <!-- footer section end -->
       <!-- copyright section start -->
       <div class="copyright_section">
          <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
+            <p class="copyright_text">2022 All Rights Reserved. Design by Muhammad Bilal Manzoor</p>
          </div>
-      </div>
       <!-- copyright section end -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
@@ -209,3 +373,9 @@
       </script>
    </body>
 </html>
+
+
+
+
+
+  

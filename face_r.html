@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Face Recognition Attendance System</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/stylec.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+      <!-- font awesome css -->
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1 style="color: white; font-size: 35px;">M Bilal Manzoor</h1>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#skills">Skills</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+      </div>
+      <!-- header section end -->
+      <!-- services section start -->
+     <!-- Services Section Start -->
+     <div class="services_section layout_padding margin_90">
+      <div class="container">
+      
+<!-- Project Details Section -->
+<section class="project_details">
+    <div class="container">
+        <h1>Employee Management System with Face Recognition</h1>
+        <p>📸 Built a Streamlit-based application for managing employee registration and automating attendance marking using face recognition. This system uses an IP Webcam for real-time face detection and records attendance in an Excel file.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Employee Registration: Register employees by providing their ID, name, and photo.</li>
+            <li>Face Recognition: Automatically detect and recognize faces using uploaded photos.</li>
+            <li>Attendance Tracking: Mark attendance in real-time using an IP Webcam and save records in an Excel file.</li>
+            <li>Duplicate Prevention: Prevent duplicate attendance entries for the same day.</li>
+        </ul>
+
+        <h2>Directory Structure</h2>
+        <pre>
+            employee-management-system/
+            ├── app.py                  # Main application code
+            ├── employees.csv           # Stores employee details
+            ├── attendance.xlsx         # Stores attendance records
+            ├── employee_faces/         # Folder to store employee photos
+            ├── requirements.txt        # List of dependencies
+            └── README.md               # Project documentation
+        </pre>
+
+        <h2>Installation</h2>
+        <h3>Prerequisites</h3>
+        <ul>
+            <li>Python 3.8 or higher</li>
+            <li>A working IP Webcam (e.g., Android app like IP Webcam)</li>
+        </ul>
+
+        <h3>Steps to Install</h3>
+        <ol>
+            <li>Clone the Repository:<br><code>git clone https://github.com/Devmbm2/employee-management-system.git</code><br><code>cd employee-management-system</code></li>
+            <li>Set Up a Virtual Environment (Optional but Recommended):<br><code>python -m venv venv</code><br><code>source venv/bin/activate</code> (On Windows: <code>venv\\Scripts\\activate</code>)</li>
+            <li>Install Dependencies:<br><code>pip install -r requirements.txt</code></li>
+            <li>Run the Application:<br><code>streamlit run main.py</code></li>
+        </ol>
+
+        <h2>How to Use This Tool</h2>
+        <h3>Employee Registration:</h3>
+        <ul>
+            <li>Navigate to the "Register Employee" tab.</li>
+            <li>Input the Employee ID and Name.</li>
+            <li>Upload a clear photo of the employee.</li>
+            <li>Click "Register Employee" to save the details and photo.</li>
+        </ul>
+
+        <h3>Marking Attendance:</h3>
+        <ul>
+            <li>Navigate to the "Mark Attendance" tab.</li>
+            <li>Enter the IP Webcam URL (e.g., <code>http://192.168.1.100:8080/video</code>).</li>
+            <li>The system will start detecting faces and marking attendance automatically.</li>
+            <li>Attendance records are saved in <code>attendance.xlsx</code>.</li>
+        </ul>
+
+        <h3>Viewing Attendance:</h3>
+        <ul>
+            <li>Open the <code>attendance.xlsx</code> file to view the attendance records.</li>
+        </ul>
+
+        <h2>Images and Videos from the Project</h2>
+        <div class="project_images">
+            <div class="large_video">
+                <video controls class="project_video_large" width="70%" height="70%" autoplay loop muted>
+                    <source src="images/face_r.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <br><br>
+        <h2>View the Code</h2>
+        <div class="button_group">
+            <a href="https://github.com/Devmbm2/employee-management-system" class="button" target="_blank">View Code on GitHub</a>
+        </div>
+    </div>
+</section>
+
+       
+      </div>
+   </div>
+   
+      <!-- services section end -->
+      <!-- footer section start -->
+      <div class="footer_section">
+         <div class="container">
+            <div class="location_text">
+               <ul>
+                  <li>
+                     <a href="tel:+923034105303"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                 </li>
+                 <li>
+                     <a href="mailto:devmbm2@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                 </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2022 All Rights Reserved. Design by Muhammad Bilal Manzoor</p>
+         </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         $('#myCarousel').carousel({
+            interval: false
+         });
+         
+         //scroll slides on swipe for touch enabled devices
+         
+         $("#myCarousel").on("touchstart", function(event){
+         
+            var yClick = event.originalEvent.touches[0].pageY;
+            $(this).one("touchmove", function(event){
+         
+                var yMove = event.originalEvent.touches[0].pageY;
+                if( Math.floor(yClick - yMove) > 1 ){
+                    $(".carousel").carousel('next');
+                }
+                else if( Math.floor(yClick - yMove) < -1 ){
+                    $(".carousel").carousel('prev');
+                }
+            });
+            $(".carousel").on("touchend", function(){
+                $(this).off("touchmove");
+            });
+         });
+      </script>
+   </body>
+</html>
+
+
+
+
+
+  

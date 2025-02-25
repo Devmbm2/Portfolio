@@ -371,16 +371,16 @@ $(function () {
 });
 
 
-  // Optionally, you can add some JavaScript to apply the zoom effect
-  const images = document.querySelectorAll('img , video');
-  images.forEach(image => {
-	  image.addEventListener('mouseover', () => {
-		  image.style.transform = 'scale(1.5)';
-	  });
-	  image.addEventListener('mouseout', () => {
-		  image.style.transform = 'scale(1)';
-	  });
-  });
+//   // Optionally, you can add some JavaScript to apply the zoom effect
+//   const images = document.querySelectorAll('img , video');
+//   images.forEach(image => {
+// 	  image.addEventListener('mouseover', () => {
+// 		  image.style.transform = 'scale(1.5)';
+// 	  });
+// 	  image.addEventListener('mouseout', () => {
+// 		  image.style.transform = 'scale(1)';
+// 	  });
+//   });
 
 
   const createNeuralNetwork = () => {
