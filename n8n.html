@@ -70,13 +70,13 @@
     <!-- Core Workflow Categories -->
     <li class="nav-item"><button class="nav-link" onclick="showProjects('leads')">Leads Automation</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('crm-integration')">CRM Integration</button></li>
-    <li class="nav-item"><button class="nav-link" onclick="showProjects('sales-call-agents')">Sales Call Agents</button></li>
+    <li class="nav-item"><button class="nav-link" onclick="showProjects('call-agents')">Voice & Call Agents</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('marketing-automation')">Marketing Automation</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('customer-support')">Customer Support</button></li>
-    <li class="nav-item"><button class="nav-link" onclick="showProjects('task-automation')">Task Automation</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('rag-agent')">RAG Agent</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('databases')">Database & Memory</li>
     <!-- Google Workspace Integrations -->
+    <li class="nav-item"><button class="nav-link" onclick="showProjects('google-drive')">Google Drive</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('gmail')">Gmail Automation</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('google-sheets')">Google Sheets</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('google-calendar')">Google Calendar</button></li>
@@ -85,13 +85,11 @@
     <li class="nav-item"><button class="nav-link" onclick="showProjects('whatsapp')">WhatsApp Integration</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('telegram')">Telegram Bots</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('slack')">Slack Integration</button></li>
-    <li class="nav-item"><button class="nav-link" onclick="showProjects('microsoft-teams')">Microsoft Teams</button></li>
 
     <!-- Data & Tools -->
     <li class="nav-item"><button class="nav-link" onclick="showProjects('data-sync')">Data Sync & Enrichment</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('webhooks')">Webhooks & APIs</button></li>
     <li class="nav-item"><button class="nav-link" onclick="showProjects('email-automation')">Email Automation</button></li>
-    <li class="nav-item"><button class="nav-link" onclick="showProjects('sms')">SMS Notifications</button></li>
 
     
 </ul>
@@ -101,10 +99,37 @@
 
 
 
+                 <div class="col-md-4 project-card all data-sync call-agents google-calendar gmail   slack email-automation webhooks ">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="n8n/hiring_automation.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">AI-Powered Hiring Automation System</h5>
+                        <p class="card-text"> I developed a fully automated end-to-end hiring pipeline using n8n, integrated with Slack, Airtable, Vapi/Twilio, job board APIs, and Google Calendar.</p>
+                        <a href="n8n_hiring_automation.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+
+                  <div class="col-md-4 project-card all data-sync call-agents google-drive  webhooks ">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="n8n/Rag_AI_Agent.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">Supabase and Postgres for RAG Agent | Google Drive Api </h5>
+                        <p class="card-text">I have set up Postgres and Supabase credentials in n8n to get your RAG (Retrieval-Augmented Generation) agent with memory up and running in no time! .</p>
+                        <a href="n8n_hiring_automation.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
 
 
 
-               <div class="col-md-4 project-card all email-automation gmail leads task-automation databases">
+
+
+               <div class="col-md-4 project-card all email-automation gmail leads  databases">
                   <div class="card h-100">
                      <video autoplay muted loop class="card-img-top">
                         <source src="n8n/human_in_loop.mp4" type="video/mp4">
@@ -118,7 +143,7 @@
                </div>
 
 
-               <div class="col-md-4 project-card all data-sync leads task-automation ">
+               <div class="col-md-4 project-card all data-sync leads  ">
                   <div class="card h-100">
                      <video autoplay muted loop class="card-img-top">
                         <source src="n8n/firecrawl.mp4" type="video/mp4">
@@ -130,12 +155,26 @@
                      </div>
                   </div>
                </div>
+
+                <div class="col-md-4 project-card all data-sync  ">
+                  <div class="card h-100">
+                     <video autoplay muted loop class="card-img-top">
+                        <source src="n8n/n8n_browser_agent.mp4" type="video/mp4">
+                     </video>
+                     <div class="card-body">
+                        <h5 class="card-title">Ultimate Browser Agent with No Code (n8n + Airtop)</h5>
+                        <p class="card-text"> This AI agent can use a computer just like a human would. It understands your instructions, spins up a live browser, and then clicks, types, and navigates the screen.</p>
+                        <a href="n8n_browser_agent.html" target="_blank" class="btn btn-primary">Read More</a>
+                     </div>
+                  </div>
+               </div>
+              
           
 
 
                
                <!-- Image Classification Projects -->
-               <div class="col-md-4 project-card all computer-vision image-classification">
+               <!-- <div class="col-md-4 project-card all computer-vision image-classification">
                   <div class="card h-100">
                      <img src="images/img-1.jpg" class="card-img-top" alt="Potato Leafs Disease Classification">
                      <div class="card-body">
@@ -144,7 +183,7 @@
                         <a href="patato_cnn.html" target="_blank" class="btn btn-primary">Read More</a>
                      </div>
                   </div>
-               </div>
+               </div> -->
 
      
 
