@@ -1054,27 +1054,27 @@
          
          
          
-            gsap.registerPlugin(ScrollTrigger);
+   //          gsap.registerPlugin(ScrollTrigger);
 
-              // Animate only buttons with the class .readmore_btn
-    gsap.utils.toArray('.readmore_bt , .col-md-4 , .about_text , .about_box   , .contact_item   , .seemore_bt , .box_main , .portfolio_item').forEach((button) => {
-      gsap.fromTo(
-        button,
-        { opacity: 0, scale: 0.5 }, // Start hidden and shrunken
-        {
-          opacity: 1,
-          scale: 1, // End at normal size
-          duration: 0.1,
-          ease: 'elastic.out(0.5, 0.2)', // Elastic bounce effect
-          scrollTrigger: {
-            trigger: button, // Trigger animation when the button enters view
-            start: 'top 80%',
-            end: 'top 50%',
-            toggleActions: 'play none none reverse',
-          },
-        }
-      );
-    });
+   //            // Animate only buttons with the class .readmore_btn
+   //  gsap.utils.toArray('.readmore_bt , .col-md-4 , .about_text , .about_box   , .contact_item   , .seemore_bt , .box_main , .portfolio_item').forEach((button) => {
+   //    gsap.fromTo(
+   //      button,
+   //      { opacity: 0, scale: 0.5 }, // Start hidden and shrunken
+   //      {
+   //        opacity: 1,
+   //        scale: 1, // End at normal size
+   //        duration: 0.1,
+   //        ease: 'elastic.out(0.5, 0.2)', // Elastic bounce effect
+   //        scrollTrigger: {
+   //          trigger: button, // Trigger animation when the button enters view
+   //          start: 'top 80%',
+   //          end: 'top 50%',
+   //          toggleActions: 'play none none reverse',
+   //        },
+   //      }
+   //    );
+   //  });
 
 
 
