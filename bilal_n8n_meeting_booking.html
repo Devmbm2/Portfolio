@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Automated Blog & Social Media Content Creator</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/stylec.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+      <!-- font awesome css -->
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section header_bg">
+         <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="logo">
+                    <a href="n8n_bilal.html">
+                        <h1 style="color: white; font-size: 35px;">Back to Portfolio</h1>
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="n8n_bilal.html">AI Automation Expert</a>
+                        </li>
+                      
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
+      </div>
+      <!-- header section end -->
+      <!-- services section start -->
+     <!-- Services Section Start -->
+     <div class="services_section layout_padding margin_90">
+
+
+<div class="container">
+    <h1>AI Meeting Booking Agent with Voice & Chat using n8n, ElevenLabs, Google Calendar, and Zoom</h1>
+
+    <div class="project_images">
+        <!-- Large Video -->
+        <div class="large_video">
+            <video controls class="project_video_large" width="70%" height="70%" autoplay loop muted>
+                <source src="images/meeting_booking.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <p>In this project, I show how to build an AI agent in <strong>n8n</strong> that books meetings automatically through <strong>voice calls</strong> and <strong>chat</strong>. The agent uses <strong>ElevenLabs</strong> for realistic AI voice interactions, integrates with <strong>Google Calendar</strong> for scheduling, and creates meeting links using <strong>Zoom</strong>.</p>
+
+    <h2>Project Objective</h2>
+    <p>The goal is to automate the entire meeting booking process—whether a user calls or chats, the AI agent handles the conversation, finds a time slot, books it in Google Calendar, and generates a Zoom link, all without human involvement.</p>
+
+    <h2>Workflow Overview</h2>
+    <ul>
+        <li>Receive a booking request via voice call (ElevenLabs) or chat</li>
+        <li>AI agent checks available slots in Google Calendar</li>
+        <li>Confirm the best time with the user in real-time</li>
+        <li>Create a Zoom meeting link for the booked slot</li>
+        <li>Send confirmation details back to the user</li>
+        <li>Save all booking details in Google Calendar</li>
+    </ul>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li>Voice booking using ElevenLabs TTS and STT</li>
+        <li>Chat booking for text-based interactions</li>
+        <li>Google Calendar integration for scheduling</li>
+        <li>Zoom integration for meeting creation</li>
+        <li>Fully automated flow in n8n with no-code setup</li>
+    </ul>
+
+    <h2>Use Cases</h2>
+    <ul>
+        <li>Small businesses and consultants booking client meetings</li>
+        <li>Customer support agents scheduling calls automatically</li>
+        <li>Teams needing hands-free scheduling via phone or chat</li>
+    </ul>
+
+    <h2>Results</h2>
+    <p>With this setup, clients can easily book meetings 24/7 through voice or chat. The agent automatically handles scheduling, adds the event to Google Calendar, and shares a Zoom link—saving time and improving your customer experience.</p>
+</div>
+
+
+
+
+
+
+                
+              <br><br>
+                  
+                  </div>
+               </section>
+       
+      </div>
+   </div>
+   
+
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">2022 All Rights Reserved. Design by Muhammad Bilal Manzoor</p>
+         </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+         $('#myCarousel').carousel({
+            interval: false
+         });
+         
+         //scroll slides on swipe for touch enabled devices
+         
+         $("#myCarousel").on("touchstart", function(event){
+         
+            var yClick = event.originalEvent.touches[0].pageY;
+            $(this).one("touchmove", function(event){
+         
+                var yMove = event.originalEvent.touches[0].pageY;
+                if( Math.floor(yClick - yMove) > 1 ){
+                    $(".carousel").carousel('next');
+                }
+                else if( Math.floor(yClick - yMove) < -1 ){
+                    $(".carousel").carousel('prev');
+                }
+            });
+            $(".carousel").on("touchend", function(){
+                $(this).off("touchmove");
+            });
+         });
+      </script>
+   </body>
+</html>
+
+
+
+
+
+  
